@@ -1,0 +1,42 @@
+<!--
+ * @Author: Bamboo
+ * @AuthorEmail: bamboo8493@126.com
+ * @Date: 2019-08-25 10:58:46
+ * @Description: 观察者模式 => 点击事件
+ * @LastEditors:
+ * @LastEditorsEmail:
+ * @LastEditTime: 2019-08-25 11:13:10
+ * @LastEditorsDescription:
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>observer : clickEvent</title>
+</head>
+
+<body>
+  <button id="btn">click me</button>
+
+  <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+  <script>
+    $('#btn').click(() => console.log('btn click 1'))
+    $('#btn').click(() => console.log('btn click 2'))
+    $('#btn').click(() => console.log('btn click 3'))
+
+    // 观察者模式 => $.Callbacks()
+    const callbacks = $.Callbacks()
+
+    callbacks.add(info => console.log('fn1', info))
+    callbacks.add(info => console.log('fn2', info))
+    callbacks.add(info => console.log('fn2', info))
+
+    callbacks.fire('fire')
+    callbacks.fire('go go go')
+  </script>
+</body>
+
+</html>

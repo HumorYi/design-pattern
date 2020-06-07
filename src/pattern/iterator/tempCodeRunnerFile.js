@@ -1,0 +1,2 @@
+each(arr)
+each(map)

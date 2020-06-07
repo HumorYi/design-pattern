@@ -1,0 +1,8 @@
+uml细点：
+
+  Class 中的 constructor & method ：
+    + 表示公共的
+    - 表示私有的
+
+  Class 之间的继承使用 细三角箭头
+  Class 之间的关联使用 粗箭头

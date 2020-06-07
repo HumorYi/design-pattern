@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "《JS 面试题》",
+    "price": 1,
+    "discount": 1
+  },
+  {
+    "id": 2,
+    "name": "《JS 算法题》",
+    "price": 1,
+    "discount": 1
+  },
+  {
+    "id": 4,
+    "name": "《JS 数据结构题》",
+    "price": 1,
+    "discount": 0
+  },
+  {
+    "id": 3,
+    "name": "《JS 设计模式题》",
+    "price": 1,
+    "discount": 0
+  }
+]

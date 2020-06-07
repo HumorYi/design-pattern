@@ -1,0 +1,52 @@
+<!--
+ * @Author: Bamboo
+ * @AuthorEmail: bamboo8493@126.com
+ * @Date: 2019-08-25 10:58:46
+ * @Description: 观察者模式 => 点击事件
+ * @LastEditors:
+ * @LastEditorsEmail:
+ * @LastEditTime: 2019-08-25 12:03:39
+ * @LastEditorsDescription:
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>iterator</title>
+</head>
+
+<body>
+  <a href="#">a1</a>
+  <a href="#">a2</a>
+  <a href="#">a3</a>
+  <a href="#">a4</a>
+  <a href="#">a5</a>
+
+  <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+  <script>
+    let arr = [1, 2, 3]
+    let nodeList = document.getElementsByTagName('a')
+    let $a = $('a')
+
+    /*
+    arr.forEach(item => console.log(item))
+
+    for (let i = 0, len = nodeList.length; i < len; i++) {
+      console.log(nodeList[i])
+    }
+
+    $a.each((index, item) => console.log(index, item))
+    */
+
+    const each = data => $(data).each((index, item) => console.log(index, item))
+
+    each(arr)
+    each(nodeList)
+    each($a)
+  </script>
+</body>
+
+</html>
